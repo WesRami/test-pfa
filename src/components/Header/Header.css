@@ -1,0 +1,73 @@
+.image-container {
+  position: relative;
+  width: 100%; 
+  height: 100vh;
+  background-image: url('https://img.pikbest.com/wp/202345/shopping-cart-ecommerce-website-with-the-on-a-laptop-screen_9604584.jpg!bw700'); 
+  background-size: cover; 
+  background-position: center; 
+  border-radius: 5px;
+}
+
+.navs {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  background: linear-gradient(45deg, #4f649e, #6c8ae4); /* Dégradé de bleu */
+  padding: 15px 30px; /* Plus de padding pour un effet de bouton */
+  color: #fff; /* Texte en blanc pour un bon contraste */
+  font-size: 3.5em;
+  font-family: 'Merriweather', 'EB Garamond', 'Source Serif Pro', 'PT Serif', 'Crimson Text', serif;
+  text-decoration: none;
+  border-radius: 50px; /* Coins arrondis pour un aspect plus moderne */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Ombre pour la profondeur */
+  transition: all 0.3s ease; /* Transition pour un effet de survol fluide */
+}
+
+.navs:hover {
+  background: linear-gradient(45deg, #6c8ae4, #4f649e); /* Inverse le dégradé au survol */
+  transform: scale(1.05); /* Légèrement agrandi au survol */
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée */
+  color: #ffdd57; /* Couleur du texte change au survol */
+}
+
+.navs::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(circle, rgba(255, 221, 87, 0.2), rgba(0, 0, 0, 0));
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+  transition: transform 0.5s ease;
+  z-index: -1; /* Derrière le texte */
+}
+
+.navs:hover::before {
+  transform: translate(-50%, -50%) scale(1); /* Effet d'onde au survol */
+}
+
+
+
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navs {
+    top: 30%;
+    left: 5%;
+    font-size: 2.5em;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navs {
+    top: 20%;
+    left: 2%;
+    font-size: 1.5em;
+    padding: 6px 12px;
+  }
+}
