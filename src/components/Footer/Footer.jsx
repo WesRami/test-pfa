@@ -21,7 +21,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className="footer-column">
-                    <h3>Quick Link</h3>
+                    <h3>Quick test</h3>
                     <ul>
                         <li>Shoppie</li>
                         <li>ExploreNow</li>
